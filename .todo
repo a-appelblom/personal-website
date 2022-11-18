@@ -1,0 +1,33 @@
+☐ sidenav
+    ☐ scroll to sections
+
+☐ Presentations
+    ☐ Heading
+    ☐ Description
+    ☐ Image
+    ☐ Link to next section
+
+☐ Skills
+    ☐ List of skills
+    ☐ Favorite things
+
+
+☐ Blog 
+    ☐ Latest 5 blog entries
+
+☐ Projects
+    ☐ List of projects
+
+☐ Hobbies
+    ☐ List of hobbies
+
+☐ Contact form
+    ☐ Social links
+    ☐ contact form
+
+
+☐ Other
+    ✔ Add tailwind @done(22-11-18 15:18)
+    ☐ Set up sendgrid 
+    ☐ Set up a domain
+    ☐ Try some tdd
