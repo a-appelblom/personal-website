@@ -1,5 +1,5 @@
 <script>
-	import Link from 'components/common/link.svelte';
+	import Link from 'components/common/Link.svelte';
 </script>
 
 <nav class="bg-gradient-to-b from-indigo-900 to-black h-16 flex items-center px-16">
