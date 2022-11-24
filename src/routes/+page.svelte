@@ -57,8 +57,9 @@
 	<!-- TODO: add list of projects -->
 </Section>
 <Section id="interests">
-	<SectionCard title="My interests" />
-	<p>Sitting in front of the computer all day every day is not very healthy, so I try not to.</p>
-	<p>Get in touch if you want to join me in ome of my other interests, which are:</p>
+	<SectionCard title="My interests">
+		<p>Sitting in front of the computer all day every day is not very healthy, so I try not to.</p>
+		<p>Get in touch if you want to join me in ome of my other interests, which are:</p>
+	</SectionCard>
 	<!-- TODO: add list of hobbies -->
 </Section>
