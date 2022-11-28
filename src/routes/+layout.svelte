@@ -1,6 +1,6 @@
 <script>
-	import '@fontsource/fira-mono';
 	import '../app.css';
+	import '@fontsource/fira-mono';
 	import Footer from 'components/Layout/Footer.svelte';
 	import Navigation from 'components/Layout/Navigation.svelte';
 </script>
