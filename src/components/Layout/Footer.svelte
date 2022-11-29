@@ -12,24 +12,30 @@
 	<ul class="flex gap-8 py-8">
 		<li>
 			<a
+				class="hover:text-red-300"
 				href="https://www.linkedin.com/in/anton-appelblom-81557087/"
 				target="_blank"
 				rel="noreferrer"><FaLinkedin /></a
 			>
 		</li>
 		<li>
-			<a href="https://twitter.com/AAppelblom" target="_blank" rel="noreferrer"
-				><FaTwitterSquare /></a
+			<a
+				class="hover:text-red-300"
+				href="https://twitter.com/AAppelblom"
+				target="_blank"
+				rel="noreferrer"><FaTwitterSquare /></a
 			>
 		</li>
 		<li>
-			<a href="https://github.com/a-appelblom" target="_blank" rel="noreferrer"
-				><FaGithubSquare /></a
+			<a
+				class="hover:text-red-300"
+				href="https://github.com/a-appelblom"
+				target="_blank"
+				rel="noreferrer"><FaGithubSquare /></a
 			>
 		</li>
 	</ul>
 	<p>OR you can get in touch using the form below</p>
-	<p>If all else fail you can reach me at my email</p>
 	<form class="flex flex-col w-full gap-4" method="POST" action="?/formSubmit" use:enhance>
 		<div class="flex justify-between w-full">
 			<label for="name">Name</label>
@@ -45,6 +51,7 @@
 		</div>
 		<button class="hover:bg-white hover:text-black bg-gray-700 rounded-md">Send</button>
 	</form>
+	<p>If all else fail you can reach me at my email</p>
 	<a href="mailto: anton@mujina.se">anton@mujina.se</a>
 	<p>Thank you for visiting</p>
 </footer>

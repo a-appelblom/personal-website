@@ -1,7 +1,57 @@
-<script>
-	import Image from 'components/common/Image.svelte';
+<script lang="ts">
+	import CardTextContent from 'components/common/CardTextContent.svelte';
+	import Carousel from 'components/common/Carousel.svelte';
+	import Icon, { Icons } from 'components/common/Icon.svelte';
 	import SectionCard from 'components/common/SectionCard.svelte';
+	import SkillCard from 'components/common/SkillCard.svelte';
 	import Section from 'components/Section.svelte';
+
+	interface Skill {
+		title: string;
+		icon: Icons;
+		info?: string[];
+	}
+
+	export const mySkills: Skill[] = [
+		{
+			title: 'Javscript',
+			icon: Icons.js,
+			info: [
+				'Javascript is my bread and butter and is the language I am most proficient in.',
+				'I can be productive in any javascript framework as well.'
+			]
+		},
+		{
+			title: 'HTML',
+			icon: Icons.html,
+			info: [
+				'As a web developer you get nowhere without HTML and I am proficient in the use of semantic readable HTML'
+			]
+		},
+		{
+			title: 'CSS',
+			icon: Icons.css,
+			info: [
+				'The second pillar of webdev before javascript actually is css.',
+				'I am proficient in both regular css and using proprocessors or libraries such as Sass, Tailwind, Material UI or Styled components'
+			]
+		},
+		{
+			title: 'Node',
+			icon: Icons.node,
+			info: [
+				'My first steps into backend delelopment happended through node and I am used to building APIs and scripts in Node.'
+			]
+		},
+		{
+			title: 'React',
+			icon: Icons.react,
+			info: [
+				'I have been building webapps and frontends in react and apps in react native all of my career.'
+			]
+		},
+		{ title: 'Git', icon: Icons.git }
+	];
 </script>
 
 <svelte:head>
@@ -24,21 +74,27 @@
 </Section>
 <Section id="skills">
 	<SectionCard title="What can I do" subtitle="Agile fullstack developer">
-		<p>
-			I primarily work in javascript and the related web languages to build frontend-applications in
-			react. I also build backends and API:s also primarily in javascript although I am very much
-			branching out.
-		</p>
-		<p>
-			My greatest joy in my profession is solving problems. When you have had a tricky issue, bug or
-			feature and you finally manage to crack it, that is an amazing feeling.
-		</p>
-		<p>
-			I also know my way around the agile way of thinking and usually act as a scrum master or agile
-			coach in my teams.
-		</p>
+		<CardTextContent>
+			<p>
+				I primarily work in javascript and the related web languages to build frontend-applications
+				in react. I also build backends and API:s also primarily in javascript although I am very
+				much branching out.
+			</p>
+			<p>
+				My greatest joy in my profession is solving problems. When you have had a tricky issue, bug
+				or feature and you finally manage to crack it, that is an amazing feeling.
+			</p>
+			<p>
+				I also know my way around the agile way of thinking and usually act as a scrum master or
+				agile coach in my teams.
+			</p>
+		</CardTextContent>
 	</SectionCard>
-	<!-- TODO: add list of skills -->
+	<Carousel>
+		{#each mySkills as { title, icon, info }}
+			<SkillCard {title} {info}><Icon iconName={icon} slot="icon" /></SkillCard>
+		{/each}
+	</Carousel>
 </Section>
 <Section id="blog">
 	<SectionCard title="Read my writing" />
