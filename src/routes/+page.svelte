@@ -1,57 +1,13 @@
 <script lang="ts">
 	import CardTextContent from 'components/common/CardTextContent.svelte';
 	import Carousel from 'components/common/Carousel.svelte';
-	import Icon, { Icons } from 'components/common/Icon.svelte';
+	import Icon from 'components/common/Icon.svelte';
+	import ProjectCard from 'components/common/ProjectCard.svelte';
 	import SectionCard from 'components/common/SectionCard.svelte';
 	import SkillCard from 'components/common/SkillCard.svelte';
 	import Section from 'components/Section.svelte';
-
-	interface Skill {
-		title: string;
-		icon: Icons;
-		info?: string[];
-	}
-
-	export const mySkills: Skill[] = [
-		{
-			title: 'Javscript',
-			icon: Icons.js,
-			info: [
-				'Javascript is my bread and butter and is the language I am most proficient in.',
-				'I can be productive in any javascript framework as well.'
-			]
-		},
-		{
-			title: 'HTML',
-			icon: Icons.html,
-			info: [
-				'As a web developer you get nowhere without HTML and I am proficient in the use of semantic readable HTML'
-			]
-		},
-		{
-			title: 'CSS',
-			icon: Icons.css,
-			info: [
-				'The second pillar of webdev before javascript actually is css.',
-				'I am proficient in both regular css and using proprocessors or libraries such as Sass, Tailwind, Material UI or Styled components'
-			]
-		},
-		{
-			title: 'Node',
-			icon: Icons.node,
-			info: [
-				'My first steps into backend delelopment happended through node and I am used to building APIs and scripts in Node.'
-			]
-		},
-		{
-			title: 'React',
-			icon: Icons.react,
-			info: [
-				'I have been building webapps and frontends in react and apps in react native all of my career.'
-			]
-		},
-		{ title: 'Git', icon: Icons.git }
-	];
+	import { mySkills } from '../constants/skills';
+	import { projects } from '../constants/projects';
 </script>
 
 <svelte:head>
@@ -63,7 +19,7 @@
 	<SectionCard
 		image={{
 			src: 'https://res.cloudinary.com/anapp/image/upload/c_crop,g_face,h_773,y_825/v1669302685/Personal-site/Anton_mr5cn3.webp',
-			alt: 'monsieur cage'
+			alt: 'monsieur cage',
 		}}
 		link={{ href: '#skills', text: 'See what i can do' }}
 		title="Who am I?"
@@ -110,7 +66,11 @@
 			collegues we do some fun things. I also have a few personal projects you can check out.
 		</p>
 	</SectionCard>
-	<!-- TODO: add list of projects -->
+	<Carousel>
+		{#each projects as { title, description, link, image }}
+			<ProjectCard {title} {description} {link} {image} />
+		{/each}
+	</Carousel>
 </Section>
 <Section id="interests">
 	<SectionCard title="My interests">
