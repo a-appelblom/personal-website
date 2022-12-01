@@ -17,7 +17,7 @@
 	<title>Anton Appelblom</title>
 </svelte:head>
 
-<h1 class="text-center text-3xl font-bold mt-4">Welcome to Anton's part of the internet</h1>
+<h1 class="text-center text-3xl font-bold mt-4">Welcome</h1>
 <Section id="hero">
 	<SectionCard
 		image={{
@@ -25,7 +25,6 @@
 			alt: 'Anton Appelblom smiling',
 		}}
 		link={{ href: '#skills', text: 'See what i can do' }}
-		title={mainPage.hero.title}
 		subtitle={mainPage.hero.subtitle}
 	>
 		<CardTextContent text={mainPage.hero.text} />
