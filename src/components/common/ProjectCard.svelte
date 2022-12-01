@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { text } from 'svelte/internal';
 	import Image from './Image.svelte';
 	import Link from './Link.svelte';
 
@@ -9,9 +8,15 @@
 	export let image: { src: string; alt: string };
 </script>
 
-<div class="w-[70vw] border p-4">
-	<p class="text-lg font-bold">{title}</p>
-	<Link href={link.href}>{link.text}</Link>
-	<Image src={image.src} alt={image.alt} />
-	<p class="text-clip">{description}</p>
+<div
+	class="w-[70vw] border rounded-lg p-4 flex flex-col gap-2 shadow-lg shadow-slate-800 justify-between"
+>
+	<div class="flex flex-col gap-4">
+		<p class="text-lg font-bold">{title}</p>
+		<Image src={image.src} alt={image.alt} withGradient={false} />
+	</div>
+	<div class="flex flex-col gap-2">
+		<p>{description}</p>
+		<Link href={link.href}>{link.text}</Link>
+	</div>
 </div>

@@ -8,6 +8,8 @@
 	import Section from 'components/Section.svelte';
 	import { mySkills } from '../constants/skills';
 	import { projects } from '../constants/projects';
+	import { hobbies } from '../constants/hobbies';
+	import HobbyCard from 'components/common/HobbyCard.svelte';
 </script>
 
 <svelte:head>
@@ -75,7 +77,11 @@
 <Section id="interests">
 	<SectionCard title="My interests">
 		<p>Sitting in front of the computer all day every day is not very healthy, so I try not to.</p>
-		<p>Get in touch if you want to join me in ome of my other interests, which are:</p>
+		<p>Get in touch if you want to join me in one of my other interests, which are:</p>
 	</SectionCard>
-	<!-- TODO: add list of hobbies -->
+	<Carousel>
+		{#each hobbies as { title, description, image }}
+			<HobbyCard {title} {description} {image} />
+		{/each}
+	</Carousel>
 </Section>
