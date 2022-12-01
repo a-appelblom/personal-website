@@ -13,12 +13,10 @@
 {#if subtitle}
 	<h3 class="text-3xl text-center py-8">{subtitle}</h3>
 {/if}
-<CardTextContent>
-	<slot />
-</CardTextContent>
+<slot />
 {#if image}
 	<Image src={image.src} alt={image.alt} />
 {/if}
 {#if link}
-	<Link href={link.href}>{link.text}</Link>
+	<Link href={link.href} withAnimation>{link.text}</Link>
 {/if}

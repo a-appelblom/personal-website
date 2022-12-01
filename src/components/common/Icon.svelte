@@ -11,7 +11,9 @@
 		'scrum',
 		'react',
 		'angular',
-		'git'
+		'git',
+		'menu',
+		'closeMenu',
 	}
 </script>
 
@@ -28,6 +30,8 @@
 	import DiReact from 'svelte-icons/di/DiReact.svelte';
 	import DiAngularSimple from 'svelte-icons/di/DiAngularSimple.svelte';
 	import DiGit from 'svelte-icons/di/DiGit.svelte';
+	import FaBars from 'svelte-icons/fa/FaBars.svelte';
+	import FaMinus from 'svelte-icons/fa/FaMinus.svelte';
 
 	export let iconName: Icons;
 	const components = new Map<Icons, any>([
@@ -42,7 +46,9 @@
 		[Icons.scrum, DiScrum],
 		[Icons.sass, DiSass],
 		[Icons.psql, DiPostgresql],
-		[Icons.react, DiReact]
+		[Icons.react, DiReact],
+		[Icons.menu, FaBars],
+		[Icons.closeMenu, FaMinus],
 	]);
 </script>
 

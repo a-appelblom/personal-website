@@ -2,13 +2,13 @@
     ☐ scroll to sections
 
 ☐ Presentations
-    ☐ Heading
-    ☐ Description
-    ☐ Image
+    ✔ Heading @done(22-12-01 16:18)
+    ✔ Description @done(22-12-01 16:18)
+    ✔ Image @done(22-12-01 16:18)
     ☐ Link to next section
 
 ☐ Skills
-    ☐ List of skills
+    ✔ List of skills @done(22-12-01 16:17)
     ☐ Favorite things
 
 
@@ -16,14 +16,14 @@
     ☐ Latest 5 blog entries
 
 ☐ Projects
-    ☐ List of projects
+    ✔ List of projects @done(22-12-01 16:20)
 
 ☐ Hobbies
     ☐ List of hobbies
 
 ☐ Contact form
     ✔ Social links @done(22-11-28 18:06)
-    ☐ contact form
+    ✔ contact form @done(22-12-01 16:18)
 
 
 ☐ Other
@@ -31,3 +31,4 @@
     ☐ Set up sendgrid 
     ☐ Set up a domain
     ☐ Try some tdd
+    ☐ External links
