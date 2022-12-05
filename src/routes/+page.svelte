@@ -17,7 +17,7 @@
 	<title>Anton Appelblom</title>
 </svelte:head>
 
-<h1 class="text-center text-3xl font-bold mt-4">Welcome</h1>
+<h1 class="text-center text-3xl lg:text-7xl font-bold mt-4">Welcome</h1>
 <Section id="hero">
 	<SectionCard
 		image={{
@@ -34,11 +34,13 @@
 	<SectionCard title="What can I do" subtitle="Agile fullstack developer">
 		<CardTextContent text={mainPage.skills.text} />
 	</SectionCard>
-	<Carousel>
-		{#each mySkills as { title, icon, info }}
-			<SkillCard {title} {info}><Icon iconName={icon} slot="icon" /></SkillCard>
-		{/each}
-	</Carousel>
+	<div class="self-center">
+		<Carousel>
+			{#each mySkills as { title, icon, info }}
+				<SkillCard {title} {info}><Icon iconName={icon} slot="icon" /></SkillCard>
+			{/each}
+		</Carousel>
+	</div>
 </Section>
 <Section id="blog">
 	<SectionCard title="Read my writing">

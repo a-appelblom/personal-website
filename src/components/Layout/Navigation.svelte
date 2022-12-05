@@ -10,7 +10,7 @@
 			<Link href="/">Home</Link>
 		</li>
 		<li>
-			<Link href="/Blog">Blog</Link>
+			<Link href="/blog">Blog</Link>
 		</li>
 	</ul>
 </nav>
