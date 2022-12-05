@@ -11,6 +11,8 @@
 	import { mySkills } from '../constants/skills';
 	import { projects } from '../constants/projects';
 	import { hobbies } from '../constants/hobbies';
+	import SkillCarousel from 'components/common/SkillCarousel.svelte';
+	import ProjectCarousel from 'components/common/ProjectCarousel.svelte';
 </script>
 
 <svelte:head>
@@ -35,11 +37,11 @@
 		<CardTextContent text={mainPage.skills.text} />
 	</SectionCard>
 	<div class="self-center">
-		<Carousel>
+		<SkillCarousel>
 			{#each mySkills as { title, icon, info }}
 				<SkillCard {title} {info}><Icon iconName={icon} slot="icon" /></SkillCard>
 			{/each}
-		</Carousel>
+		</SkillCarousel>
 	</div>
 </Section>
 <Section id="blog">
@@ -52,11 +54,11 @@
 	<SectionCard title="Check out my projects">
 		<CardTextContent text={mainPage.projects.text} />
 	</SectionCard>
-	<Carousel>
+	<ProjectCarousel>
 		{#each projects as { title, description, link, image }}
 			<ProjectCard {title} {description} {link} {image} />
 		{/each}
-	</Carousel>
+	</ProjectCarousel>
 </Section>
 <Section id="interests">
 	<SectionCard title="My interests">

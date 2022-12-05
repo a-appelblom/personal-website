@@ -9,7 +9,7 @@
 </script>
 
 <div
-	class="w-[70vw] lg:w-80 border rounded-lg p-4 flex flex-col gap-2 shadow-lg shadow-slate-800 justify-between"
+	class="w-[70vw] lg:w-full border rounded-lg p-4 flex flex-col gap-2 shadow-lg shadow-slate-800 justify-between"
 >
 	<div class="flex flex-col gap-4">
 		<p class="text-lg font-bold">{title}</p>
