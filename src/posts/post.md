@@ -1,0 +1,39 @@
+# Setting up my website
+
+I Have for a long time planned on creating my own site. I have however every time I have started, ended up setting the scope way beyond what i can keep motivation and make time for. So i decided this time for an incremental approach. Get a simple site up and running first and then add new fun things and experiments later.
+
+---
+
+## Getting started
+
+I have a basic idea of how my site should look. Designing from scratch not really being my forte, i spent some time on the web getting some inspiration. Not a bad way to actually get started.
+
+### Choosing tech
+
+Now I like trying new things and in my day job i do work mostly with react, so let's not use react for this. I have had my eyes on svelte for some time and have experimented a little, besides Rich Harris usually have some very smart things to say about web development. I trust his judgment and creation and decided to go with svelte-kit.
+
+Svelte-kit gives you some option when getting started, typescript or no, playwright or not, and what the starting set-up should be. I said yes to everything.
+
+Now i have almost since i started my web development journey used typescript, much thanks to starting out in a proper project quite early and have a sort of mentor really talking it up, since then i feel naked without it, so of course we need typescript.
+
+I have never used playwright, I have however used cypress a bit and i was interested in trying this library out. Lets see if i can keep a TDD discipline in this personal project.
+
+I chose to use the demo app just to get some
+
+### Setting up project
+
+Svelte-kit is incredibly easy to get started with.
+
+### Limiting scope
+
+### Init
+
+---
+
+## And we are off
+
+### Nav and Sidenav
+
+### Sections
+
+### Footer
