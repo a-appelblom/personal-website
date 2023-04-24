@@ -26,7 +26,7 @@
 	})} -->
 	<script type="application/ld+json">
 	{
-		'@schema': 'https://schema.org',
+		'@context': 'https://schema.org',
 		'@type': 'Person',
 		'name': 'Anton Appelblom',
 		'url': 'https://anapp.se'
