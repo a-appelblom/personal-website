@@ -13,18 +13,17 @@
 	import { hobbies } from '../constants/hobbies';
 	import SkillCarousel from 'components/common/SkillCarousel.svelte';
 	import ProjectCarousel from 'components/common/ProjectCarousel.svelte';
+	import { serializeJson } from 'src/utils';
 </script>
 
 <svelte:head>
 	<title>Anton Appelblom</title>
-	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "Person",
-		"name": "Anton Appelblom",
-		"url": "anapp.se",
-	}
-	</script>
+	{@html serializeJson({
+		'@schema': 'https://schema.org',
+		'@type': 'Person',
+		name: 'Anton Appelblom',
+		url: 'https://anapp.se',
+	})}
 </svelte:head>
 
 <h1 class="text-center text-3xl lg:text-7xl font-bold mt-4">Welcome</h1>
