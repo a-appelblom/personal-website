@@ -13,7 +13,7 @@
 	import { hobbies } from '../constants/hobbies';
 	import SkillCarousel from 'components/common/SkillCarousel.svelte';
 	import ProjectCarousel from 'components/common/ProjectCarousel.svelte';
-	import { serializeJson } from 'src/utils';
+	import { serializeJson } from '../utils';
 </script>
 
 <svelte:head>
