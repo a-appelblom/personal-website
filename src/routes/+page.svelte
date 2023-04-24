@@ -19,7 +19,7 @@
 <svelte:head>
 	<title>Anton Appelblom</title>
 	{@html serializeJson({
-		'@schema': 'https://schema.org',
+		'@context': 'https://schema.org',
 		'@type': 'Person',
 		name: 'Anton Appelblom',
 		url: 'https://anapp.se',
