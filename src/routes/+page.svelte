@@ -18,20 +18,23 @@
 
 <svelte:head>
 	<title>Anton Appelblom</title>
-	{@html serializeJson({
+	<!-- {@html serializeJson({
 		'@context': 'https://schema.org',
 		'@type': 'Person',
 		name: 'Anton Appelblom',
 		url: 'https://anapp.se',
-	})}
-	<!-- <script type="application/ld+json">
-	{
-		'@context': 'https://schema.org',
-		'@type': 'Person',
-		'name': 'Anton Appelblom',
-		'url': 'https://anapp.se'
-	}
-	</script> -->
+	})} -->
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Person",
+		  "email": "mailto:anton@mujina.se",
+		  "image": "https://res.cloudinary.com/anapp/image/upload/c_crop,g_face,h_773,y_825/v1669302685/Personal-site/Anton_mr5cn3.webp",
+		  "jobTitle": "Fullstack-developer",
+		  "name": "Anton Appelblom",
+		  "url": "http://anapp.se"
+		}
+	</script>
 </svelte:head>
 
 <h1 class="text-center text-3xl lg:text-7xl font-bold mt-4">Welcome</h1>
