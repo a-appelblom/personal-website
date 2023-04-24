@@ -18,20 +18,20 @@
 
 <svelte:head>
 	<title>Anton Appelblom</title>
-	<!-- {@html serializeJson({
+	{@html serializeJson({
 		'@schema': 'https://schema.org',
 		'@type': 'Person',
 		name: 'Anton Appelblom',
 		url: 'https://anapp.se',
-	})} -->
-	<script type="application/ld+json">
+	})}
+	<!-- <script type="application/ld+json">
 	{
 		'@context': 'https://schema.org',
 		'@type': 'Person',
 		'name': 'Anton Appelblom',
 		'url': 'https://anapp.se'
 	}
-	</script>
+	</script> -->
 </svelte:head>
 
 <h1 class="text-center text-3xl lg:text-7xl font-bold mt-4">Welcome</h1>
