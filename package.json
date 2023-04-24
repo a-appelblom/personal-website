@@ -37,6 +37,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.10",
+		"@sveltejs/adapter-vercel": "1",
 		"svelte-icons": "^2.1.0"
 	}
 }
