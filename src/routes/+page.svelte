@@ -27,11 +27,10 @@
 	<script type="application/ld+json">
 		{
 		  "@context": "https://schema.org",
-		  "@type": "Person",
+		  "@type": "LocalBusiness",
 		  "email": "mailto:anton@mujina.se",
 		  "image": "https://res.cloudinary.com/anapp/image/upload/c_crop,g_face,h_773,y_825/v1669302685/Personal-site/Anton_mr5cn3.webp",
-		  "jobTitle": "Fullstack-developer",
-		  "name": "Anton Appelblom",
+		  "name": "Anton Appelblom @ Mujina AB",
 		  "url": "http://anapp.se"
 		}
 	</script>
