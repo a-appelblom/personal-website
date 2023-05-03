@@ -1,6 +1,7 @@
 ☐ sidenav
-    ☐ scroll to sections
-
+    ☐ scroll to sections @done(22-11-28 18:06)
+    ☐ add contact me link
+    
 ☐ Presentations
     ✔ Heading @done(22-12-01 16:18)
     ✔ Description @done(22-12-01 16:18)
@@ -28,7 +29,8 @@
 
 ☐ Other
     ✔ Add tailwind @done(22-11-18 15:18)
-    ☐ Set up sendgrid 
-    ☐ Set up a domain
+    ✔ Set up a domain @done(23-04-14 17:10)
     ☐ Try some tdd
     ☐ External links
+    ☐ Fix scrolling sections
+    

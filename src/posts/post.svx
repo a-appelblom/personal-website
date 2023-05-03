@@ -1,4 +1,16 @@
-# Setting up my website
+---
+layout: blog
+title: To build or not to build
+date: 2021-05-01
+tags:
+  - svelte
+  - sveltekit
+  - typescript
+  - webdev
+  - personal
+---
+
+# {title}
 
 I Have for a long time planned on creating my own site. I have however every time I have started, ended up setting the scope way beyond what i can keep motivation and make time for. So i decided this time for an incremental approach. Get a simple site up and running first and then add new fun things and experiments later.
 

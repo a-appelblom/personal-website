@@ -14,6 +14,8 @@
 	import SkillCarousel from 'components/common/SkillCarousel.svelte';
 	import ProjectCarousel from 'components/common/ProjectCarousel.svelte';
 	import { serializeJson } from '../utils';
+
+	import { browser } from '$app/environment';
 </script>
 
 <svelte:head>

@@ -47,5 +47,10 @@
 				<Link href="/#interests">Hobbies</Link>
 			</button>
 		</li>
+		<li>
+			<button on:click={toggleOpen}>
+				<Link href="/#contact">Contact me</Link>
+			</button>
+		</li>
 	</ul>
 {/if}

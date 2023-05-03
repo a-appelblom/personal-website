@@ -1,13 +1,21 @@
 <script lang="ts">
-	export let data: { post: string };
+	import type { PageData } from '../$types';
+	import type { PostType } from './+page.server';
+	import showdown from 'showdown';
+
+	const converter = new showdown.Converter();
+
+	export let data;
+	const { post } = data;
 </script>
 
-<div class="max-w-4xl mx-auto">
-	<div class="markdown">{@html data.post}</div>
-</div>
+<svelte:head>
+	<title>{post.title}</title>
+</svelte:head>
 
-<style scoped>
-	.markdown h1 {
-		@apply text-3xl;
-	}
-</style>
+<div class="max-w-4xl mx-auto">
+	<p class="mb-8">{post.date}</p>
+	<article class="prose prose-invert prose-2xl">
+		{@html converter.makeHtml(post.content)}
+	</article>
+</div>
