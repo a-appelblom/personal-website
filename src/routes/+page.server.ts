@@ -9,6 +9,11 @@ export const actions: Actions = {
 		const email = data.get('email');
 		const message = data.get('message');
 
+    const domain = email.split("@");
+    if(domain.includes("anapp"){
+      message = "POTENTIAL SPAM \n \n \n" + message;
+    }
+
 		const slackMessage = {
 			channel: PUBLIC_SLACK_CHANNEL_ID,
 			// text: `${name} with email: ${email} sends message: ${message}`,
